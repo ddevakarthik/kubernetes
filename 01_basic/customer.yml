@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: cs.heylearner.com
+  labels:
+    app: customerservice
+spec:
+  containers:
+  - name: exp-demo
+    image: experiencedevops/customerservice:latest
+    ports:
+    - name: cs-port
+      containerPort: 9090
